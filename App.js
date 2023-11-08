@@ -2,11 +2,14 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
+import NewCard from './components/NewCard';
 
 export default function App() {
   return (
-    <ViewImageScreen/>
-    // <WelcomeScreen/>
+    // <ViewImageScreen/>
+    
+   
+    <WelcomeScreen/>
     // <View style={styles.container}>
     //   <Text>Hello World!</Text>
     //   <StatusBar style="auto" />
