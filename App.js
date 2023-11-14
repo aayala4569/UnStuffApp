@@ -6,10 +6,10 @@ import NewCard from './components/NewCard';
 
 export default function App() {
   return (
-    // <ViewImageScreen/>
+    <ViewImageScreen/>
     
    
-    <WelcomeScreen/>
+    // <WelcomeScreen/>
     // <View style={styles.container}>
     //   <Text>Hello World!</Text>
     //   <StatusBar style="auto" />

@@ -2,6 +2,7 @@ import React from 'react';
 import { View, ImageBackground, StyleSheet, loginButton, registerButton, Text, Image, logo, tagline} from 'react-native';
 import color from '../config/color';
 import NewButton from '../../components/NewButton';
+import AppButton from '../../components/AppButton';
 
 function WelcomeScreen(props) {
     return (
@@ -11,6 +12,8 @@ function WelcomeScreen(props) {
       style={styles.backgroundImage}>  
       <Image style={styles.logo} source={require('../assets/UnStuffLogo.png')}/>
       <Text style={styles.tagline}>Unstuff Your Life</Text>
+      <AppButton color="primary" title={"Login"} onPress={() => console.log('Login')}/>
+      <AppButton color="secondary" title={"Register"} onPress={() => console.log('Register')}/>
       <NewButton/>
    
      </ImageBackground>

@@ -1,6 +1,7 @@
 export default {
-    primary: 'tomato',
-    secondary: 'green',
-    black: "#000"
+    primary: 'blue',
+    secondary: 'hotpink',
+    black: "#0000",
+    white:"#ffff"
 
 }

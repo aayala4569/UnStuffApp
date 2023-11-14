@@ -4,13 +4,13 @@ import color from '../app/config/color';
 const NewButton = () => {
   return (
     <View style={styles.buttonContainer}>
-      <View style={styles.loginButton}>
+      {/* <View style={styles.loginButton}>
         <Text>Login</Text>
-      </View>
-      <View style={styles.registerButton}>
+      </View> */}
+      {/* <View style={styles.registerButton}>
 
         <Text>Register</Text>
-      </View>
+      </View> */}
 
     </View>
   );
