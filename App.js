@@ -3,10 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import NewCard from './components/NewCard';
+import Card from './components/Card';
 
 export default function App() {
   return (
-    <ViewImageScreen/>
+    // <ViewImageScreen/>
+    <View style={{backgroundColor: "#f8f4f4", padding: 20, paddingTop: 100}}>
+      <Card title="Jean Jacket for Sale" subTitle="$100" image={require('./app/assets/jeanJacket.jpg')}/>
+    </View>
     
    
     // <WelcomeScreen/>
