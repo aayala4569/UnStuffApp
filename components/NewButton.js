@@ -1,6 +1,12 @@
-import React from 'react';
-import { TouchableOpacity, onPress, Text, StyleSheet, View } from 'react-native';
-import color from '../app/config/color';
+import React from "react";
+import {
+  TouchableOpacity,
+  onPress,
+  Text,
+  StyleSheet,
+  View,
+} from "react-native";
+import color from "../app/config/Color";
 const NewButton = () => {
   return (
     <View style={styles.buttonContainer}>
@@ -11,38 +17,33 @@ const NewButton = () => {
 
         <Text>Register</Text>
       </View> */}
-
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   buttonContainer: {
-    width: '100%',
+    width: "100%",
   },
   loginButton: {
-    width: '100%',
+    width: "100%",
     height: 70,
     backgroundColor: color.primary,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 50
-    
-},
-registerButton: {
-    width: '100%',
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 50,
+  },
+  registerButton: {
+    width: "100%",
     height: 70,
     backgroundColor: color.secondary,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 50,
-    
-
-},
-text: {
-  color: "white"
-}
- 
+  },
+  text: {
+    color: "white",
+  },
 });
 
 export default NewButton;

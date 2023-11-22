@@ -5,13 +5,14 @@ import ViewImageScreen from './app/screens/ViewImageScreen';
 import NewCard from './components/NewCard';
 import Card from './components/Card';
 import ListingDetailScreen from './app/screens/ListingDetailScreen';
+import MessagesScreen from './app/screens/MessagesScreen';
 
 export default function App() {
   return (
     // <ViewImageScreen/>
-   <ListingDetailScreen/>
+  //  <ListingDetailScreen/>
     
-   
+   <MessagesScreen/>
     // <WelcomeScreen/>
     // <View style={styles.container}>
     //   <Text>Hello World!</Text>
