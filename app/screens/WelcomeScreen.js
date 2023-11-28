@@ -10,9 +10,10 @@ import {
   logo,
   tagline,
 } from "react-native";
-import color from "../config/Color";
-import NewButton from "../../components/NewButton";
-import AppButton from "../../components/AppButton";
+import color from "../config/color";
+import AppButton from "../components/AppButton";
+
+
 
 function WelcomeScreen(props) {
   return (
@@ -35,7 +36,7 @@ function WelcomeScreen(props) {
         title={"Register"}
         onPress={() => console.log("Register")}
       />
-      <NewButton />
+     
     </ImageBackground>
   );
 }

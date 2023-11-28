@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Image } from "react-native";
 import AppText from "./AppText";
-import color from "../app/config/Color";
+import color from "../config/color";
 
 const Card = ({ title, subTitle, image }) => {
   return (
@@ -34,6 +34,9 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 28,
   },
+  detailsContainer: {
+    padding: 20
+  }
 });
 
 export default Card;

@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Image, View } from "react-native";
-import color from "../config/Color";
+import color from "../config/color";
 import { AntDesign } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
@@ -8,11 +8,11 @@ function ViewImageScreen(props) {
   return (
     <View style={styles.container}>
       <View style={styles.closeIcon}>
-        <AntDesign name="closesquare" size={40} color="black" />
+        <MaterialCommunityIcons name="closesquare" size={40} color="black" />
       </View>
 
       <View style={styles.deleteIcon}>
-        <AntDesign name="delete" size={40} color="black" />
+        <MaterialCommunityIcons name="delete" size={40} color="black" />
       </View>
       <Image
         resizeMode="contain"
