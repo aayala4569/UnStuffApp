@@ -5,6 +5,7 @@ import { View, StyleSheet } from "react-native";
 import { FlatList } from "react-native-gesture-handler";
 import Icon from "../components/Icon";
 import color from "../config/color";
+import ListItemSeparator from "../components/ListItemSeparator";
 
 const menuItems = [
   {
@@ -22,8 +23,8 @@ const AccountsScreen = () => {
     <Screen style={styles.screen}>
       <View style={styles.container}>
         <ListItem
-          title="Jose Martinez"
-          subTitle="josemartinez8282@gmail.com"
+          title="Angelica Ayala"
+          subTitle="angelicaayala100@gmail.com"
           image={require("../assets/meme.png")}
         />
       </View>
@@ -32,6 +33,7 @@ const AccountsScreen = () => {
         <FlatList
           data={menuItems}
           keyExtractor={(menuItems) => menuItems.title}
+          ItemSeparatorComponent={ListItemSeparator}
           renderItem={({ item }) => (
             <ListItem
               title={item.title}
@@ -45,6 +47,7 @@ const AccountsScreen = () => {
           )}
         />
       </View>
+      <ListItem title= "Log Out" ImageComponent={<Icon name="logout" backgroundColor="orange"/>}/>
     </Screen>
   );
 };
