@@ -11,6 +11,7 @@ import Icon from "./app/components/Icon";
 import Screen from "./app/components/Screen";
 import ListItem from "./app/components/ListItem";
 import AccountsScreen from "./app/screens/AccountsScreen";
+import ListingsScreen from "./app/screens/ListingsScreen";
 
 
 export default function App() {
@@ -20,7 +21,7 @@ export default function App() {
     //  <ListingDetailScreen/>
     <GestureHandlerRootView style={{ flex: 1 }}>
      
-<AccountsScreen/>
+<ListingsScreen/>
       
     </GestureHandlerRootView>
   );
