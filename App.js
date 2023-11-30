@@ -14,6 +14,7 @@ import ListItem from "./app/components/ListItem";
 import AccountsScreen from "./app/screens/AccountsScreen";
 import ListingsScreen from "./app/screens/ListingsScreen";
 import AppTextInput from "./app/components/AppTextInput";
+import AppSwitch from "./app/components/AppSwitch";
 
 
 export default function App() {
@@ -24,10 +25,7 @@ export default function App() {
     // <WelcomeScreen/>
     //  <ListingDetailScreen/>
     <GestureHandlerRootView style={{ flex: 1 }}>
-     
-    <Screen>
-      <AppTextInput placeholder="username" icon="email"/> 
-    </Screen>
+     <AppSwitch/>
     </GestureHandlerRootView>
   );
 }
