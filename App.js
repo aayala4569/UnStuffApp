@@ -15,7 +15,20 @@ import AccountsScreen from "./app/screens/AccountsScreen";
 import ListingsScreen from "./app/screens/ListingsScreen";
 import AppTextInput from "./app/components/AppTextInput";
 import AppSwitch from "./app/components/AppSwitch";
+import AppPicker from "./app/components/AppPicker";
+import AppPicker2 from "./app/components/AppPicker2";
 
+const categories =[
+  {
+    lable: 'Furniture', value: 1
+  },
+  {
+    lable: 'Clothing', value: 2
+  },
+  {
+    lable: 'Camera', value: 3
+  }
+]
 
 export default function App() {
 
@@ -25,7 +38,11 @@ export default function App() {
     // <WelcomeScreen/>
     //  <ListingDetailScreen/>
     <GestureHandlerRootView style={{ flex: 1 }}>
-     <AppSwitch/>
+    <Screen>
+      <AppPicker2 items={categories} icon="apps" placeholder="category"/>
+      <AppTextInput icon="email" placeholder="email"/>
+    </Screen>
     </GestureHandlerRootView>
+
   );
 }
