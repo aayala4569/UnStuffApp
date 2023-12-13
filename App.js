@@ -17,31 +17,18 @@ import AppTextInput from "./app/components/AppTextInput";
 import AppSwitch from "./app/components/AppSwitch";
 import AppPicker from "./app/components/AppPicker";
 import AppPicker2 from "./app/components/AppPicker2";
+import LoginScreen from "./app/screens/LoginScreen";
 
-const categories =[
-  {
-    lable: 'Furniture', value: 1
-  },
-  {
-    lable: 'Clothing', value: 2
-  },
-  {
-    lable: 'Camera', value: 3
-  }
-]
 
 export default function App() {
 
-  const [firstName, setFirstName] = useState("This is our original text")
+
   return (
     // <ViewImageScreen/>
     // <WelcomeScreen/>
     //  <ListingDetailScreen/>
     <GestureHandlerRootView style={{ flex: 1 }}>
-    <Screen>
-      <AppPicker2 items={categories} icon="apps" placeholder="category"/>
-      <AppTextInput icon="email" placeholder="email"/>
-    </Screen>
+    <LoginScreen/>
     </GestureHandlerRootView>
 
   );

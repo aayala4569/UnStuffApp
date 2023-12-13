@@ -9,7 +9,8 @@ import PickerItem from './PickerItem';
 
 
 
-const AppPicker2 = ({icon, placeholder, item}) => {
+const AppPicker2 = ({icon, placeholder, item, onSelectItem, selectedItem}) => {
+
 const [modalVisible, setModalVisible] = useState(true);
 
   return (
@@ -18,7 +19,7 @@ const [modalVisible, setModalVisible] = useState(true);
 
         <View style={styles.container}>
       {icon && <MaterialCommunityIcons name={icon} size={30} color={defaultStyles.medium} style={styles.icon}/>}
-      <AppText style={styles.text}>{placeholder}</AppText>
+      <AppText style={styles.text}>{selectedItem ? selectedItem.label : placeholder}</AppText>
       <MaterialCommunityIcons name='chevron-down' size={30} color={defaultStyles.medium}/>
     </View>
     </TouchableWithoutFeedback>
@@ -26,7 +27,7 @@ const [modalVisible, setModalVisible] = useState(true);
     <Modal visable={modalVisible} animationType='slide'>
         <Screen>
             <Button title='Close' onPress={() => setModalVisible(false)}/>
-            <FlatList data={item} keyExtractor={item => item.value.toString()} renderItem={(item) => <PickerItem label={item.label} onPress={() => console.log(item)}/>}/>
+            <FlatList data={item} keyExtractor={item => item.value.toString()} renderItem={(item) => (<PickerItem label={item.label} onPress={() => {setModalVisible(false); onSelectItem(item)}}/>)}/>
         </Screen>
     </Modal>
     

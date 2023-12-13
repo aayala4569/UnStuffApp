@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "UnStuffApp",
-    "slug": "UnStuffApp",
+    "slug": "unstuffapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
@@ -25,6 +25,18 @@
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "33f0aaf1-bea3-4424-809d-ed5923db1567"
+      }
+    },
+    "owner": "aayala",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/33f0aaf1-bea3-4424-809d-ed5923db1567"
     }
   }
 }
